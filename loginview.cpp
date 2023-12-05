@@ -6,9 +6,20 @@ LoginView::LoginView(QWidget *parent) :
     ui(new Ui::LoginView)
 {
     ui->setupUi(this);
+
 }
 
 LoginView::~LoginView()
 {
     delete ui;
+}
+
+void LoginView::on_btSignIn_clicked()
+{
+    emit loginSuccess();
+}
+
+void LoginView::on_btSignup_clicked()
+{
+
 }

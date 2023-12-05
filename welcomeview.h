@@ -2,7 +2,7 @@
 #define WELCOMEVIEW_H
 
 #include <QWidget>
-
+#include <QDebug>
 namespace Ui {
 class WelcomeView;
 }
@@ -14,6 +14,19 @@ class WelcomeView : public QWidget
 public:
     explicit WelcomeView(QWidget *parent = nullptr);
     ~WelcomeView();
+
+private slots:
+    void on_btDepartment_clicked();
+
+    void on_btDoctor_clicked();
+
+    void on_btPatient_clicked();
+
+signals:
+    void goDepartmentView();
+    void goDoctorView();
+    void goPatientView();
+
 
 private:
     Ui::WelcomeView *ui;
