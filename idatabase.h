@@ -16,10 +16,13 @@ public:
                                   // Instantiated on first use.
             return instance;
         }
-        void initDatabase();
+
+        QString userLogin(QString userName,QString password);
 signals:
 private:
         explicit iDataBase(QObject *parent = nullptr);
+        void initDatabase();
+
         iDataBase(iDataBase const&)               = delete;
         void operator=(iDataBase const&)  = delete;
         QSqlDatabase database;

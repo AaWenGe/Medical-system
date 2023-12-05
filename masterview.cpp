@@ -119,7 +119,7 @@ void MasterView::on_stackedWidget_currentChanged(int arg1)
         ui->btLogout->setEnabled(true);
         ui->btBack->setEnabled(false);
     }else{
-        ui->btLogout->setEnabled(true);
+        ui->btLogout->setEnabled(false);
     }
 
 }
