@@ -12,6 +12,7 @@ PatientEditView::PatientEditView(QWidget *parent,int index) :
     dataMapper->setModel(iDataBase::getInstance().patientTabModel);
     dataMapper->setSubmitPolicy(QDataWidgetMapper::AutoSubmit);
 
+
     dataMapper->addMapping(ui->dbEditID,tableModel->fieldIndex("ID"));
     dataMapper->addMapping(ui->dbEditName,tableModel->fieldIndex("NAME"));
     dataMapper->addMapping(ui->dbEditIDCard,tableModel->fieldIndex("ID_CARD"));

@@ -6,12 +6,43 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>553</width>
-    <height>312</height>
+    <width>520</width>
+    <height>348</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>登录</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"> QPushButton {
+      border: 2px solid #8f8f91;
+      border-radius: 6px;
+      background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                        stop: 0 #f6f7fa, stop: 1 #dadbde);
+      min-width: 70px;
+  }
+
+  QPushButton:pressed {
+      background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                        stop: 0 #babbbe, stop: 1 #f6f7fa);
+  }
+
+  QPushButton:flat {
+      border: none; /* no border for a flat push button */
+  }
+
+  QPushButton:default {
+      border-color: navy; /* make the default button prominent */
+  }
+
+  QLineEdit {
+      border: 2px solid gray;
+      border-radius: 10px;
+      padding: 0 8px;
+     
+      selection-background-color: darkgray;
+  }
+</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -157,6 +188,13 @@
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
+        <widget class="QPushButton" name="btSignIn">
+         <property name="text">
+          <string>登录</string>
+         </property>
+        </widget>
+       </item>
+       <item>
         <widget class="QPushButton" name="btSignup">
          <property name="text">
           <string>注册</string>
@@ -164,9 +202,9 @@
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="btSignIn">
+        <widget class="QPushButton" name="btAbout">
          <property name="text">
-          <string>登录</string>
+          <string>关于</string>
          </property>
         </widget>
        </item>

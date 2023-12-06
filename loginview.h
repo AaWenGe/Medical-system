@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <idatabase.h>
+#include <QMessageBox>
 namespace Ui {
 class LoginView;
 }
@@ -23,6 +24,8 @@ private slots:
     void on_btSignIn_clicked();
 
     void on_btSignup_clicked();
+
+    void on_btAbout_clicked();
 
 private:
     Ui::LoginView *ui;

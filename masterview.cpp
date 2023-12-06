@@ -8,7 +8,6 @@ MasterView::MasterView(QWidget *parent)
     ui->setupUi(this);
     setWindowFlag(Qt::FramelessWindowHint);
     goLoginView();
-    goWelcomeView();
 
 }
 
@@ -119,15 +118,13 @@ void MasterView::on_stackedWidget_currentChanged(int arg1)
     }
 
     if(ui->stackedWidget->currentWidget()->windowTitle()=="欢迎"){
-        ui->btLogout->setEnabled(true);
         ui->btBack->setEnabled(false);
-    }else{
-        ui->btLogout->setEnabled(false);
     }
-
 }
 
 void MasterView::on_btLogout_clicked()
 {
+    if(ui->stackedWidget->currentWidget()->windowTitle()=="登录")
+       this->close();
     goPreviousView();
 }

@@ -13,6 +13,37 @@
   <property name="windowTitle">
    <string>添加患者</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"> QPushButton {
+      border: 2px solid #8f8f91;
+      border-radius: 6px;
+      background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                        stop: 0 #f6f7fa, stop: 1 #dadbde);
+      min-width: 80px;
+  }
+
+  QPushButton:pressed {
+      background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                        stop: 0 #babbbe, stop: 1 #f6f7fa);
+  }
+
+  QPushButton:flat {
+      border: none; /* no border for a flat push button */
+  }
+
+  QPushButton:default {
+      border-color: navy; /* make the default button prominent */
+  }
+
+  QLineEdit {
+      border: 2px solid gray;
+      border-radius: 10px;
+      padding: 0 8px;
+     
+      selection-background-color: darkgray;
+  }
+</string>
+  </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
    <item>
     <spacer name="horizontalSpacer">
@@ -36,7 +67,13 @@
       <widget class="QLineEdit" name="dbEditIDCard"/>
      </item>
      <item row="4" column="2">
-      <widget class="QDateEdit" name="dbDateEditDOB"/>
+      <widget class="QDateEdit" name="dbDateEditDOB">
+       <property name="styleSheet">
+        <string notr="true"> border: 2px solid gray;
+      border-radius: 10px;
+      padding: 0 8px;</string>
+       </property>
+      </widget>
      </item>
      <item row="4" column="0">
       <widget class="QLabel" name="label_5">
@@ -90,7 +127,23 @@
       <widget class="QLineEdit" name="dbEditID"/>
      </item>
      <item row="3" column="2">
-      <widget class="QComboBox" name="dbComboSex"/>
+      <widget class="QComboBox" name="dbComboSex">
+       <property name="styleSheet">
+        <string notr="true"> border: 2px solid gray;
+      border-radius: 10px;
+      padding: 0 8px;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>男</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>女</string>
+        </property>
+       </item>
+      </widget>
      </item>
      <item row="3" column="0">
       <widget class="QLabel" name="label_4">
@@ -100,7 +153,13 @@
       </widget>
      </item>
      <item row="5" column="2">
-      <widget class="QSpinBox" name="dbSpinHeight"/>
+      <widget class="QSpinBox" name="dbSpinHeight">
+       <property name="styleSheet">
+        <string notr="true"> border: 2px solid gray;
+      border-radius: 10px;
+      padding: 0 8px;</string>
+       </property>
+      </widget>
      </item>
      <item row="8" column="0">
       <widget class="QLabel" name="label_9">
@@ -117,7 +176,13 @@
       </widget>
      </item>
      <item row="6" column="2">
-      <widget class="QSpinBox" name="dbSpinWeight"/>
+      <widget class="QSpinBox" name="dbSpinWeight">
+       <property name="styleSheet">
+        <string notr="true"> border: 2px solid gray;
+      border-radius: 10px;
+      padding: 0 8px;</string>
+       </property>
+      </widget>
      </item>
      <item row="8" column="2">
       <widget class="QLineEdit" name="dbCreatedTimeStamp"/>
