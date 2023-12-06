@@ -53,7 +53,11 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 DISTFILES += \
  README.md \
  icons/back.png \
- icons/logout.png
+ icons/change.png \
+ icons/delete.png \
+ icons/find.png \
+ icons/logout.png \
+ icons/添加.png
 
 RESOURCES += \
  icons.qrc \

@@ -8,6 +8,7 @@ MasterView::MasterView(QWidget *parent)
     ui->setupUi(this);
     setWindowFlag(Qt::FramelessWindowHint);
     goLoginView();
+    goWelcomeView();
 
 }
 
@@ -69,13 +70,15 @@ void MasterView::goPatientView()
 }
 
 
-void MasterView::goPatientEditView()
+void MasterView::goPatientEditView(int rowNo)
 {
     qDebug()<<"goPatientEditView";
-    patientEditView = new PatientEditView(this);
+    patientEditView = new PatientEditView(this,rowNo);
     ui->stackedWidget->addWidget(patientEditView);
 
     pushWidgetToStackView(patientEditView);
+    connect(patientEditView,&PatientEditView::goPreviousView,this,&MasterView::goPreviousView);
+
 }
 
 void MasterView::goPreviousView()
