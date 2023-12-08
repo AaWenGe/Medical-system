@@ -73,6 +73,9 @@
       border-radius: 10px;
       padding: 0 8px;</string>
        </property>
+       <property name="calendarPopup">
+        <bool>false</bool>
+       </property>
       </widget>
      </item>
      <item row="4" column="0">
@@ -159,6 +162,9 @@
       border-radius: 10px;
       padding: 0 8px;</string>
        </property>
+       <property name="maximum">
+        <number>300</number>
+       </property>
       </widget>
      </item>
      <item row="8" column="0">
@@ -181,6 +187,9 @@
         <string notr="true"> border: 2px solid gray;
       border-radius: 10px;
       padding: 0 8px;</string>
+       </property>
+       <property name="maximum">
+        <number>500</number>
        </property>
       </widget>
      </item>

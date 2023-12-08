@@ -24,8 +24,13 @@ PatientEditView::PatientEditView(QWidget *parent,int index) :
     dataMapper->addMapping(ui->dbCreatedTimeStamp,tableModel->fieldIndex("CREATEDTIME"));
     dataMapper->setCurrentIndex(index);
 
-    ui->dbEditID->setEnabled(false);
-    ui->dbCreatedTimeStamp->setEnabled(false);
+    //只有获得焦点才会保存到数据库
+    ui->dbCreatedTimeStamp->setFocus();
+    ui->dbComboSex->setFocus();
+    ui->dbEditID->setFocus();
+
+//    ui->dbEditID->setEnabled(false);
+//    ui->dbCreatedTimeStamp->setEnabled(false);
     qDebug()<<"patientEdit,index :"<<index;
 }
 
