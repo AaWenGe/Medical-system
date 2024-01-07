@@ -95,6 +95,31 @@ void MasterView::goPreviousView()
     delete widget;
 }
 
+void MasterView::goDoctoreditview()
+{
+
+}
+
+void MasterView::goVisitview()
+{
+
+}
+
+void MasterView::goVisiteditview()
+{
+
+}
+
+void MasterView::goMedicationview()
+{
+
+}
+
+void MasterView::goMedicationeditview()
+{
+
+}
+
 void MasterView::pushWidgetToStackView(QWidget* widget)
 {
     int count = ui->stackedWidget->count();

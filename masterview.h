@@ -8,6 +8,11 @@
 #include <patienteditview.h>
 #include <patientview.h>
 #include <welcomeview.h>
+#include <doctoreditview.h>
+#include <visitview.h>
+#include <visiteditview.h>
+#include <medicationview.h>
+#include <medicationeditview.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MasterView; }
@@ -29,7 +34,11 @@ public slots:
     void goPatientView();
     void goPatientEditView(int rowNo);
     void goPreviousView();
-
+    void goDoctoreditview();
+    void goVisitview();
+    void goVisiteditview();
+    void goMedicationview ();
+    void goMedicationeditview();
 private slots:
     void on_btBack_clicked();
 
@@ -40,7 +49,6 @@ private slots:
 private:
     void pushWidgetToStackView(QWidget* widget);
 
-
     Ui::MasterView *ui;
 
     LoginView *loginView;
@@ -49,6 +57,11 @@ private:
     DepartmentView *departmentView;
     WelcomeView *welcomeView;
     PatientView *patientView;
+    doctorEditView doctoreditview;
+    VisitView visitview;
+    VisitEditView visiteditview;
+    MedicationView medicationview;
+    MedicationEditView medicationeditview;
 
 };
 #endif // MASTERVIEW_H

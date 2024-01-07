@@ -16,33 +16,51 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    departmenteditview.cpp \
     departmentview.cpp \
+    doctoreditview.cpp \
     doctorview.cpp \
     idatabase.cpp \
     loginview.cpp \
     main.cpp \
     masterview.cpp \
+    medicationeditview.cpp \
+    medicationview.cpp \
     patienteditview.cpp \
     patientview.cpp \
+    visiteditview.cpp \
+    visitview.cpp \
     welcomeview.cpp
 
 HEADERS += \
+    departmenteditview.h \
     departmentview.h \
+    doctoreditview.h \
     doctorview.h \
     idatabase.h \
     loginview.h \
     masterview.h \
+    medicationeditview.h \
+    medicationview.h \
     patienteditview.h \
     patientview.h \
+    visiteditview.h \
+    visitview.h \
     welcomeview.h
 
 FORMS += \
+    departmenteditview.ui \
     departmentview.ui \
+    doctoreditview.ui \
     doctorview.ui \
     loginview.ui \
     masterview.ui \
+    medicationeditview.ui \
+    medicationview.ui \
     patienteditview.ui \
     patientview.ui \
+    visiteditview.ui \
+    visitview.ui \
     welcomeview.ui
 
 # Default rules for deployment.
