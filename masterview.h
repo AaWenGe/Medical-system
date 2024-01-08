@@ -34,11 +34,11 @@ public slots:
     void goPatientView();
     void goPatientEditView(int rowNo);
     void goPreviousView();
-    void goDoctoreditview();
-    void goVisitview();
-    void goVisiteditview();
-    void goMedicationview ();
-    void goMedicationeditview();
+    void goDoctorEditView();
+    void goVisitView();
+    void goVisitEditView();
+    void goMedicationView();
+    void goMedicationEditView();
 private slots:
     void on_btBack_clicked();
 
@@ -57,11 +57,11 @@ private:
     DepartmentView *departmentView;
     WelcomeView *welcomeView;
     PatientView *patientView;
-    doctorEditView doctoreditview;
-    VisitView visitview;
-    VisitEditView visiteditview;
-    MedicationView medicationview;
-    MedicationEditView medicationeditview;
+    DoctorEditView *doctorEditView;
+    VisitView *visitView;
+    VisitEditView *visitEditView;
+    MedicationView *medicationView;
+    MedicationEditView *medicationEditView;
 
 };
 #endif // MASTERVIEW_H

@@ -24,8 +24,7 @@ void MasterView::goLoginView()
     pushWidgetToStackView(loginView);
 
     connect(loginView,&LoginView::loginSuccess,this,&MasterView::goWelcomeView);
-
- }
+}
 
 void MasterView::goWelcomeView()
 {
@@ -37,17 +36,12 @@ void MasterView::goWelcomeView()
     connect(welcomeView,&WelcomeView::goDoctorView,this,&MasterView::goDoctorView);
     connect(welcomeView,&WelcomeView::goDepartmentView,this,&MasterView::goDepartmentView);
     connect(welcomeView,&WelcomeView::goPatientView,this,&MasterView::goPatientView);
+    connect(welcomeView,&WelcomeView::goMedicationView,this,&MasterView::goMedicationView);
+    connect(welcomeView,&WelcomeView::goVisitView,this,&MasterView::goVisitView);
 
 }
 
-void MasterView::goDoctorView()
-{
-    qDebug()<<"goDoctorView";
-    doctorView = new DoctorView(this);
-    ui->stackedWidget->addWidget(doctorView);
 
-    pushWidgetToStackView(doctorView);
-}
 
 void MasterView::goDepartmentView()
 {
@@ -95,28 +89,63 @@ void MasterView::goPreviousView()
     delete widget;
 }
 
-void MasterView::goDoctoreditview()
+void MasterView::goDoctorView()
 {
+    qDebug()<<"goDoctorView";
+    doctorView = new DoctorView(this);
+    ui->stackedWidget->addWidget(doctorView);
+
+    pushWidgetToStackView(doctorView);
+    connect(doctorView,SIGNAL(goDoctorEditView()),this,SLOT(goDoctorEditView()));
+}
+
+void MasterView::goDoctorEditView()
+{
+    qDebug()<<"goDoctorEditView";
+    doctorEditView = new DoctorEditView(this);
+    ui->stackedWidget->addWidget(doctorEditView);
+
+    pushWidgetToStackView(doctorEditView);
 
 }
 
-void MasterView::goVisitview()
+void MasterView::goVisitView()
 {
+    qDebug()<<"goVisitView";
+    visitView = new VisitView(this);
+    ui->stackedWidget->addWidget(visitView);
+
+    pushWidgetToStackView(visitView);
+    connect(visitView,SIGNAL(goVisitEditView()),this,SLOT(goVisitEditView()));
+}
+
+void MasterView::goVisitEditView()
+{
+    qDebug()<<"goVisitEditView";
+    visitEditView = new VisitEditView(this);
+    ui->stackedWidget->addWidget(visitEditView);
+
+    pushWidgetToStackView(visitEditView);
+}
+
+void MasterView::goMedicationView()
+{
+    qDebug()<<"goMedicationView";
+    medicationView = new MedicationView(this);
+    ui->stackedWidget->addWidget(medicationView);
+
+    pushWidgetToStackView(medicationView);
+    connect(medicationView,SIGNAL(goMedicationEditView()),this,SLOT(goMedicationEditView()));
 
 }
 
-void MasterView::goVisiteditview()
+void MasterView::goMedicationEditView()
 {
+    qDebug()<<"goMedicationEditView";
+    medicationEditView = new MedicationEditView(this);
+    ui->stackedWidget->addWidget(medicationEditView);
 
-}
-
-void MasterView::goMedicationview()
-{
-
-}
-
-void MasterView::goMedicationeditview()
-{
+    pushWidgetToStackView(medicationEditView);
 
 }
 

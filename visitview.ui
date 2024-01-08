@@ -19,7 +19,7 @@
      <item>
       <widget class="QLineEdit" name="lineEdit">
        <property name="placeholderText">
-        <string>请输入姓名进行查找</string>
+        <string>请输入就诊ID进行查找</string>
        </property>
       </widget>
      </item>

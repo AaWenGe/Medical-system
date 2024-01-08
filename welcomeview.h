@@ -22,11 +22,16 @@ private slots:
 
     void on_btPatient_clicked();
 
+    void on_btMedication_clicked();
+
+    void on_btVisit_clicked();
+
 signals:
     void goDepartmentView();
     void goDoctorView();
     void goPatientView();
-
+    void goVisitView();
+    void goMedicationView();
 
 private:
     Ui::WelcomeView *ui;

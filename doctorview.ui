@@ -6,25 +6,36 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>707</width>
-    <height>468</height>
+    <width>727</width>
+    <height>452</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>医生管理</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
-   <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_10">
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QLineEdit" name="lineEdit_10">
+      <widget class="QLineEdit" name="lineEdit">
        <property name="placeholderText">
         <string>请输入姓名进行查找</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btAdd_10">
+      <widget class="QPushButton" name="btSrearch">
+       <property name="text">
+        <string>查找</string>
+       </property>
+       <property name="icon">
+        <iconset resource="icons.qrc">
+         <normaloff>:/icons/find.png</normaloff>:/icons/find.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btAdd">
        <property name="text">
         <string>添加</string>
        </property>
@@ -35,7 +46,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btDelete_10">
+      <widget class="QPushButton" name="btDelete">
        <property name="text">
         <string>删除</string>
        </property>
@@ -46,7 +57,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btChange_10">
+      <widget class="QPushButton" name="btChange">
        <property name="text">
         <string>修改</string>
        </property>
@@ -56,20 +67,9 @@
        </property>
       </widget>
      </item>
-     <item>
-      <widget class="QPushButton" name="btSrearch_10">
-       <property name="text">
-        <string>查找</string>
-       </property>
-       <property name="icon">
-        <iconset resource="icons.qrc">
-         <normaloff>:/icons/find.png</normaloff>:/icons/find.png</iconset>
-       </property>
-      </widget>
-     </item>
     </layout>
    </item>
-   <item>
+   <item row="1" column="0">
     <widget class="QTableView" name="tableView">
      <property name="styleSheet">
       <string notr="true">/* 表格设置 */

@@ -7,16 +7,17 @@ namespace Ui {
 class doctorEditView;
 }
 
-class doctorEditView : public QWidget
+class DoctorEditView : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit doctorEditView(QWidget *parent = nullptr);
-    ~doctorEditView();
+    explicit DoctorEditView(QWidget *parent = nullptr);
+    ~DoctorEditView();
 
 private:
     Ui::doctorEditView *ui;
 };
+
 
 #endif // DOCTOREDITVIEW_H

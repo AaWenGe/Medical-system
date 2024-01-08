@@ -2,6 +2,7 @@
 #define VISITVIEW_H
 
 #include <QWidget>
+#include <idatabase.h>
 
 namespace Ui {
 class VisitView;
@@ -14,6 +15,18 @@ class VisitView : public QWidget
 public:
     explicit VisitView(QWidget *parent = nullptr);
     ~VisitView();
+
+private slots:
+    void on_btAdd_clicked();
+
+    void on_btChange_clicked();
+
+    void on_btDelete_clicked();
+
+    void on_btSrearch_clicked();
+
+signals:
+    void goVisitEditView();
 
 private:
     Ui::VisitView *ui;
