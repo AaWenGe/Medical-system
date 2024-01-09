@@ -42,12 +42,13 @@ void MedicationView::on_btChange_clicked()
 
 void MedicationView::on_btDelete_clicked()
 {
-
+    iDataBase::getInstance().deleteCurrentMedication();
 }
 
 
 void MedicationView::on_btSrearch_clicked()
 {
-
+    QString filter= QString("Mname like '%%1%'").arg(ui->lineEdit->text());
+    iDataBase::getInstance().searchMedication(filter);
 }
 

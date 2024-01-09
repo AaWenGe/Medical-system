@@ -22,6 +22,8 @@ public:
 
         QString userLogin(QString userName,QString password);
         void initDatabase();
+
+
         bool initPatientModel();
         QSqlTableModel *patientTabModel;       //数据模型
         QItemSelectionModel *patientSelection;  //选择模型

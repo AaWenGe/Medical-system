@@ -41,12 +41,13 @@ void DoctorView::on_btChange_clicked()
 
 void DoctorView::on_btDelete_clicked()
 {
-
+    iDataBase::getInstance().deleteCurrentDoctor();
 }
 
 
 void DoctorView::on_btSrearch_clicked()
 {
-
+    QString filter= QString("Dname like '%%1%'").arg(ui->lineEdit->text());
+    iDataBase::getInstance().searchDoctor(filter);
 }
 

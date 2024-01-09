@@ -39,12 +39,13 @@ void VisitView::on_btChange_clicked()
 
 void VisitView::on_btDelete_clicked()
 {
-
+    iDataBase::getInstance().deleteCurrentVisit();
 }
 
 
 void VisitView::on_btSrearch_clicked()
 {
-
+    QString filter= QString("VisitID like '%%1%'").arg(ui->lineEdit->text());
+    iDataBase::getInstance().searchVisit(filter);
 }
 

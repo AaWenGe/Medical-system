@@ -136,7 +136,7 @@ bool iDataBase::searchDoctor(QString filter)
 
 bool iDataBase::deleteCurrentDoctor()
 {
-    QModelIndex curIndex = patientSelection->currentIndex(); // 获取当前选中的病人记录的索引
+    QModelIndex curIndex = doctorSelection->currentIndex(); // 获取当前选中的病人记录的索引
     doctorTabModel->removeRow(curIndex.row());          // 从模型中删除该行
     doctorTabModel->submitAll();                       // 提交所有更改
     doctorTabModel->select();                          // 重新选择当前行
@@ -192,7 +192,7 @@ bool iDataBase::searchVisit(QString filter)
 
 bool iDataBase::deleteCurrentVisit()
 {
-    QModelIndex curIndex = patientSelection->currentIndex(); // 获取当前选中的病人记录的索引
+    QModelIndex curIndex = visitSelection->currentIndex(); // 获取当前选中的病人记录的索引
     visitTabModel->removeRow(curIndex.row());          // 从模型中删除该行
     visitTabModel->submitAll();                       // 提交所有更改
     visitTabModel->select();                          // 重新选择当前行
@@ -247,7 +247,7 @@ bool iDataBase::searchMedication(QString filter)
 
 bool iDataBase::deleteCurrentMedication()
 {
-    QModelIndex curIndex = patientSelection->currentIndex(); // 获取当前选中的病人记录的索引
+    QModelIndex curIndex = medicationSelection->currentIndex(); // 获取当前选中的病人记录的索引
     medicationTabModel->removeRow(curIndex.row());          // 从模型中删除该行
     medicationTabModel->submitAll();                       // 提交所有更改
     medicationTabModel->select();                          // 重新选择当前行
