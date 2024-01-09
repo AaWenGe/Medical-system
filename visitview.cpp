@@ -26,14 +26,16 @@ VisitView::~VisitView()
 
 void VisitView::on_btAdd_clicked()
 {
-    emit goVisitEditView();
+    int currow = iDataBase::getInstance().addNewVisit();
+    emit goVisitEditView(currow);
 }
 
 
 
 void VisitView::on_btChange_clicked()
 {
-
+    QModelIndex curIndex =iDataBase::getInstance().visitSelection->currentIndex();
+    emit goVisitEditView(curIndex.row());
 }
 
 

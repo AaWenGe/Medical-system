@@ -80,8 +80,6 @@ private:
         iDataBase(iDataBase const&)               = delete;
         void operator=(iDataBase const&)  = delete;
         QSqlDatabase database;
-
-
 };
 
 #endif // IDATABASE_H

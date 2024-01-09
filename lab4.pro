@@ -16,8 +16,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    departmenteditview.cpp \
-    departmentview.cpp \
     doctoreditview.cpp \
     doctorview.cpp \
     idatabase.cpp \
@@ -33,8 +31,6 @@ SOURCES += \
     welcomeview.cpp
 
 HEADERS += \
-    departmenteditview.h \
-    departmentview.h \
     doctoreditview.h \
     doctorview.h \
     idatabase.h \
@@ -49,8 +45,6 @@ HEADERS += \
     welcomeview.h
 
 FORMS += \
-    departmenteditview.ui \
-    departmentview.ui \
     doctoreditview.ui \
     doctorview.ui \
     loginview.ui \

@@ -26,7 +26,7 @@ private slots:
     void on_btSrearch_clicked();
 
 signals:
-    void goDoctorEditView();
+    void goDoctorEditView(int idx);
 
 private:
     Ui::DoctorView *ui;

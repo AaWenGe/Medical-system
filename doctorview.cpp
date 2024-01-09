@@ -29,15 +29,16 @@ DoctorView::~DoctorView()
 
 void DoctorView::on_btAdd_clicked()
 {
-    emit goDoctorEditView();
+    int currow = iDataBase::getInstance().addNewDoctor();
+    emit goDoctorEditView(currow);
 }
 
 
 void DoctorView::on_btChange_clicked()
 {
-
+    QModelIndex curIndex =iDataBase::getInstance().doctorSelection->currentIndex();
+    emit goDoctorEditView(curIndex.row());
 }
-
 
 void DoctorView::on_btDelete_clicked()
 {

@@ -34,11 +34,11 @@ public slots:
     void goPatientView();
     void goPatientEditView(int rowNo);
     void goPreviousView();
-    void goDoctorEditView();
+    void goDoctorEditView(int rowNo);
     void goVisitView();
-    void goVisitEditView();
+    void goVisitEditView(int rowNo);
     void goMedicationView();
-    void goMedicationEditView();
+    void goMedicationEditView(int rowNo);
 private slots:
     void on_btBack_clicked();
 

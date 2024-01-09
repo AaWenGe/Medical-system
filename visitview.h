@@ -26,7 +26,7 @@ private slots:
     void on_btSrearch_clicked();
 
 signals:
-    void goVisitEditView();
+    void goVisitEditView(int idx);
 
 private:
     Ui::VisitView *ui;

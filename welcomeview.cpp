@@ -37,7 +37,6 @@ void WelcomeView::on_btMedication_clicked()
     emit goMedicationView();
 }
 
-
 void WelcomeView::on_btVisit_clicked()
 {
     emit goVisitView();

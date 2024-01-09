@@ -30,27 +30,27 @@
    <item row="0" column="1" rowspan="2">
     <layout class="QGridLayout" name="gridLayout">
      <item row="5" column="2">
-      <widget class="QLineEdit" name="dbCreatedTimeStamp"/>
+      <widget class="QLineEdit" name="dbEditMedicationList"/>
      </item>
      <item row="2" column="0">
-      <widget class="QLabel" name="label_3">
+      <widget class="QLabel" name="dbDname">
        <property name="text">
         <string>医生姓名</string>
        </property>
       </widget>
      </item>
      <item row="0" column="0">
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="dbVisitID">
        <property name="text">
         <string>ID:</string>
        </property>
       </widget>
      </item>
      <item row="4" column="2">
-      <widget class="QLineEdit" name="dbEditPhone"/>
+      <widget class="QLineEdit" name="dbEditDiagnosis"/>
      </item>
      <item row="3" column="2">
-      <widget class="QDateEdit" name="dbDateEditDOB">
+      <widget class="QDateEdit" name="dbEditDate">
        <property name="styleSheet">
         <string notr="true"> border: 2px solid gray;
       border-radius: 10px;
@@ -62,14 +62,14 @@
       </widget>
      </item>
      <item row="4" column="0">
-      <widget class="QLabel" name="label_8">
+      <widget class="QLabel" name="dbDiagnosis">
        <property name="text">
         <string>诊断结果</string>
        </property>
       </widget>
      </item>
      <item row="1" column="0">
-      <widget class="QLabel" name="label_2">
+      <widget class="QLabel" name="dbPname">
        <property name="text">
         <string>病人姓名:</string>
        </property>
@@ -79,24 +79,24 @@
       <widget class="QLineEdit" name="dbEditID"/>
      </item>
      <item row="3" column="0">
-      <widget class="QLabel" name="label_5">
+      <widget class="QLabel" name="dbDate">
        <property name="text">
         <string>就诊日期:</string>
        </property>
       </widget>
      </item>
      <item row="1" column="2">
-      <widget class="QLineEdit" name="dbEditName"/>
+      <widget class="QLineEdit" name="dbEditPname"/>
      </item>
      <item row="5" column="0">
-      <widget class="QLabel" name="label_9">
+      <widget class="QLabel" name="dbMedicationList">
        <property name="text">
         <string>开具药品</string>
        </property>
       </widget>
      </item>
      <item row="2" column="2">
-      <widget class="QLineEdit" name="dbEditIDCard"/>
+      <widget class="QLineEdit" name="dbEditDname"/>
      </item>
     </layout>
    </item>

@@ -30,13 +30,15 @@ MedicationView::~MedicationView()
 
 void MedicationView::on_btAdd_clicked()
 {
-    emit goMedicationEditView();
+    int currow = iDataBase::getInstance().addNewMedication();
+    emit goMedicationEditView(currow);
 }
 
 
 void MedicationView::on_btChange_clicked()
 {
-
+    QModelIndex curIndex =iDataBase::getInstance().medicationSelection->currentIndex();
+    emit goMedicationEditView(curIndex.row());
 }
 
 

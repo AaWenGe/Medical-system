@@ -34,7 +34,7 @@
       </widget>
      </item>
      <item row="4" column="2">
-      <widget class="QLineEdit" name="dbCreatedTimeStamp"/>
+      <widget class="QLineEdit" name="dbEditLicenseNumber"/>
      </item>
      <item row="0" column="2">
       <widget class="QLineEdit" name="dbEditID"/>
@@ -54,7 +54,7 @@
       </widget>
      </item>
      <item row="2" column="2">
-      <widget class="QSpinBox" name="dbSpinHeight">
+      <widget class="QSpinBox" name="dbEditAge">
        <property name="styleSheet">
         <string notr="true"> border: 2px solid gray;
       border-radius: 10px;

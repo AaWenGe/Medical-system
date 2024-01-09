@@ -25,7 +25,7 @@ private slots:
     void on_btSrearch_clicked();
 
 signals:
-    void goMedicationEditView();
+    void goMedicationEditView(int idx);
 
 private:
     Ui::MedicationView *ui;
