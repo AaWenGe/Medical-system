@@ -28,6 +28,6 @@ void LoginView::on_btSignup_clicked()
 
 void LoginView::on_btAbout_clicked()
 {
-    QMessageBox::about(this,"关于","开发者:李佳燕\n学号:2021414120112");
+    QMessageBox::about(this,"关于","开发者:陈静文\n学号:2021414120201");
 }
 

@@ -34,7 +34,7 @@ void MasterView::goWelcomeView()
     pushWidgetToStackView(welcomeView);
 
     connect(welcomeView,&WelcomeView::goDoctorView,this,&MasterView::goDoctorView);
-    connect(welcomeView,&WelcomeView::goDepartmentView,this,&MasterView::goDepartmentView);
+//    connect(welcomeView,&WelcomeView::goDepartmentView,this,&MasterView::goDepartmentView);
     connect(welcomeView,&WelcomeView::goPatientView,this,&MasterView::goPatientView);
     connect(welcomeView,&WelcomeView::goMedicationView,this,&MasterView::goMedicationView);
     connect(welcomeView,&WelcomeView::goVisitView,this,&MasterView::goVisitView);
@@ -43,14 +43,14 @@ void MasterView::goWelcomeView()
 
 
 
-void MasterView::goDepartmentView()
-{
-    qDebug()<<"goDepartmentView";
-    departmentView = new DepartmentView(this);
-    ui->stackedWidget->addWidget(departmentView);
+//void MasterView::goDepartmentView()
+//{
+//    qDebug()<<"goDepartmentView";
+//    departmentView = new DepartmentView(this);
+//    ui->stackedWidget->addWidget(departmentView);
 
-    pushWidgetToStackView(departmentView);
-}
+//    pushWidgetToStackView(departmentView);
+//}
 
 void MasterView::goPatientView()
 {
