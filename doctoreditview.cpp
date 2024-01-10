@@ -19,8 +19,8 @@ DoctorEditView::DoctorEditView(QWidget *parent,int index) :
     dataMapper->addMapping(ui->dbEditLicenseNumber,tableModel->fieldIndex("LicenseNumber"));
     dataMapper->setCurrentIndex(index);
 
-    //只有获得焦点才会保存到数据库
 
+    //只有获得焦点才会保存到数据库
     ui->dbComboSex->setFocus();
 //    ui->dbEditID->setFocus();
 

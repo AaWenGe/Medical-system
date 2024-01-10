@@ -31,3 +31,4 @@ void LoginView::on_btAbout_clicked()
     QMessageBox::about(this,"关于","开发者:陈静文\n学号:2021414120201");
 }
 
+

@@ -23,7 +23,6 @@ VisitEditView::VisitEditView(QWidget *parent,int index) :
     dataMapper->setCurrentIndex(index);
 
 
-
     qDebug()<<"visitEdit,index :"<<index;
 
 
